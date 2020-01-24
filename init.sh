@@ -19,6 +19,3 @@ chmod +x run_container.sh destroy_container.sh display_output.sh
 
 # the destination of JSON file
 mkdir dest
-
-# run container
-./run_container
