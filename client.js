@@ -46,10 +46,10 @@ function callback(error, response, body){
         var result = JSON.parse(body);
         var output = extractUserAndMessages(result.messages);
 
-        console.log(output);
+        console.log(scriptUtil.appendStdOut(output));
 
         // 結果のファイル書き出し
-        fs.writeFile("json/output.json", output.toString(), (err, data) => {
+        fs.writeFile("json/output.json", JSON.stringify(output), (err, data) => {
             if(err) {
                 console.error(scriptUtil.LOGGING_CONST.TRACE_ERROR);
             } else {
