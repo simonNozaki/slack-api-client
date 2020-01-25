@@ -18,19 +18,14 @@ const clientConst = {
     TARGET_URL_AUTH_TEST : SLACK_API_DOMAIN + "/auth.test",
 
     /**
-     * メッセージ検索メソッド
-     */
-    TARGET_URL_SEARCH_MESSAGE : SLACK_API_DOMAIN + "/search.messages",
-
-    /**
-     * スターの一覧表示
-     */
-    TARGET_URL_STARS_LIST : SLACK_API_DOMAIN + "/stars.list",
-
-    /**
      * チャンネルのメッセージ履歴
      */
     TARGET_URL_CHANNELS_HISTORY : SLACK_API_DOMAIN + "/channels.history",
+
+    /**
+     * ユーザ一覧
+     */
+    TARGET_URL_USERS_LIST : SLACK_API_DOMAIN + "/users.list",
 
     /**
      * Slack APIトークン
