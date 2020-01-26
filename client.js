@@ -21,7 +21,8 @@ const options = {
     method : scriptUtil.HTTP_METHOD.GET,
     form : {
         "channel" : clientConst.SLACK_CHANNEL_ID,
-        "token" : clientConst.SLACK_API_TOKEN
+        "token" : clientConst.SLACK_API_TOKEN,
+        "count" : 1000
     }
 }
 
